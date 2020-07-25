@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenSourcely</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body>
+  <nav class="navbar is-transparent is-fixed-top">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="assets/images/opensourcely-small.png" alt="Bulma: a modern CSS framework based on Flexbox"
+          width="32" height="28">
+          <p class="title is-4 ml-4">
+            OpenSourcely
+          </p>
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a href="#projects" class="navbar-item">
+          Projects
+        </a>
+        <a href="#ping" class="navbar-item">
+          Contact
+        </a>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+
+  <section class="hero has-background-info-light	is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-quarters">
+        <p class="title">
+          OpenSourcely
+        </p>
+        <p class="subtitle is-4">
+          Explore. Learn. Contribute.
+        </p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <div class="columns">
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="assets/images/nucleus.png" height="96" width="96" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4 has-text-info">
+                    Nucleus
+                  </p>
+                  <p class="subtitle is-6">
+                    <span class="tag">in beta</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                Nucleus is a platform that seeks to digitalize all aspects of education delivery by facilitating online
+                learning,including classes, assignments and so on.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="ping">
+    <div class="container">
+      <h1 class="title">Ping us</h1>
+      <div class="columns">
+        <div class="column is-half">
+          <!-- <div class="card"> -->
+            <div class="card-content">
+              <div class="content">
+                <p>
+                  Have something to say? <br>
+                  Just want to say hi?
+                <p>
+                Write to us at <a href="mailto:opensourcely.io@gmail.com">opensourcely.io@gmail.com</a>
+              </p>
+
+              <p class="subtitle">
+                Interested in working with us?
+              </p>
+              <p>
+                Head over to <a href="https://github.com/opensourcely/git-sandbox">git-sandbox</a> and open a pull request :-)
+                <br>
+                You can find the details <a href="https://github.com/opensourcely/git-sandbox/blob/master/README.md"> in the README.</a>
+              </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- </div> -->
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+    
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+    
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+    
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+    
+          });
+        });
+      }
+    
+    });
+  </script>
+</body>
+
+</html>
